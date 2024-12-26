@@ -1,66 +1,81 @@
 <template>
-  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-    <div class="container-fluid p-5">
-      <div>
-        <img src="assets/img/smk.jpg" class="d-block w-100" alt="">
+  <div class="container-fuild">
+    <!--Background-->
+    <div class="carousel-inner">
+      <div class="container-fluid p-5">
+        <div class="row">
+          <img src="assets/img/smk.jpg" class="d-block w-100" alt="" />
+        </div>
       </div>
-      <br>
-      <div class="text-center">
-        <h1>Berita Terkini</h1>
-      </div>
-      
     </div>
-  </div> 
-  
+
+    <!--Berita-->
     <div class="container">
-    <div class="row">
-      <div class="col-lg-4 p-2">
-        <img src="/assets/img/ahm.jpg" alt="" style="width: 18rem; height: 20rem;">
+      <h1 class="text-center mb-5">Berita Terkini</h1>
+      <div class="row justify-content-center">
+        <div class="col-lg-4 d-flex justify-content-center">
+          <div class="card" style="width: 18rem">
+            <img src="/assets/img/ahm.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                PT DAM Jalin Kerjasama dengan SMKN 4 Tasikmalaya Terapkan
+                Kurikulum Teknik dan Bisnis Sepeda Motor Honda
+              </p>
+              <a
+                href="https://radartasik.disway.id/read/643944/pt-dam-jalin-kerjasama-dengan-smkn-4-tasikmalaya-terapkan-kurikulum-teknik-dan-bisnis-sepeda-motor-honda"
+                class="btn btn-primary"
+                >Go somewhere</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex justify-content-center">
+          <div class="card" style="width: 18rem">
+            <img src="/assets/img/safety.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Kampanyekan Cari_Aman Bersama Jurnalis, DAM Gelar Safety Riding
+                Fomo di SMKN 4 Kota Tasikmalaya Artikel ini telah tayang di
+                TribunJabar.id dengan judul Kampanyekan Cari_Aman Bersama
+                Jurnalis, DAM Gelar Safety Riding Fomo di SMKN 4 Kota
+                Tasikmalaya,
+              </p>
+              <a
+                href="https://jabar.tribunnews.com/2024/07/24/kampanyekan-cari_aman-bersama-jurnalis-dam-gelar-safety-riding-fomo-di-smkn-4-kota-tasikmalaya.
+                Penulis: Aldi M Perdana | Editor: Kemal Setia Permana"
+                class="btn btn-primary"
+                >Go somewhere</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex justify-content-center">
+          <div class="card" style="width: 18rem">
+            <img src="/assets/img/berita.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Tujuh Siswa SMKN 4 Tasikmalaya Raih Beasiswa dari Yayasan Astra
+                Honda Motor
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-lg-4 p-2">
-        <img src="/assets/img/Job.jpg" alt="" style="width: 20rem; height: 20rem;">
-      </div>
-      <div class="col-lg-4 p-2">
-        <img src="/assets/img/zona.jpg" alt="" style="width: 20rem; height: 20rem;">
-      </div>
     </div>
   </div>
-  
-  <br>
-<div class="container text-center">
-  <div class="row">
-    <div class="col">
-      <div class="card" style="width: 18rem;">
-  <div class="card-body">
-    <p class="card-text">VISI MISI</p>
-  </div>
-</div>
-    </div>
-    <div class="col order-5">
-      <div class="card" style="width: 18rem;">
-  <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div>
-    </div>
-    <div class="col order-1">
-      <div class="card" style="width: 18rem;">
-  <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div>
-    </div>
-  </div>
-</div>
 
-
-  <br>
-      <div class="text-center">
-        <h1>Kompetensi Keahlian</h1>
-      </div>
-      <div class="col-lg-4 p-2">
-        <img src="/assets/img/tbsm.jpg" alt="" style="width: 20rem; height: 20rem;">
-      </div>
-      
+  <div class="text-center">
+    <h1 class="text-center mb-5">Kompetensi Keahlian</h1>
+  </div>
+  <div class="col-lg-4 p-2">
+    <img
+      src="/assets/img/teesem.png"
+      alt=""
+      style="width: 20rem; height: 20rem"
+    />
+  </div>
 </template>
-

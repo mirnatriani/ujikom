@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg bg-primary fixed-top">
+  <nav class="navbar navbar-expand-lg bg-primary sticky-top">
     <div class="container-fluid">
       <div class="navbar-brand ms-5">
         <img
@@ -19,35 +19,19 @@
       >
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Beranda</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Profil
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+            <a class="nav-link active" aria-current="page" href="/">Beranda</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Berita</a>
+            <a class="nav-link" href="/profil">Profil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Kontak</a>
+            <a class="nav-link" href="/kontak">Kontak</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Galeri</a>
+            <a class="nav-link" href="/galeri">Galeri</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Ekstrakurikuler</a>
+            <a class="nav-link" href="/eskul">Ekstrakurikuler</a>
           </li>
         </ul>
       </div>

@@ -6,7 +6,7 @@
         <h4 class="text-center">VISI</h4>
         <h6 class="text-center">
           Terwujudnya Lulusan Yang Cerdas, Aktif, Adaktif Dan Produktif
-          Berlandaskan Iman Dan Takwa
+          Berlandaskan Iman Dan Takwa.
         </h6>
       </div>
       <h4 class="text-center">MISI</h4>

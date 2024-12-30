@@ -1,5 +1,5 @@
 <template>
-  <div class="container pt-5">
+  <div class="container pt-5 pb-5">
     <div class="row">
       <form>
         <div class="mb-3">
@@ -28,7 +28,7 @@
             id="exampleInputPassword1"
           />
         </div>
-        <button type="submit" class="btn btn-primary">Kirim</button>
+        <button type="submit" class="btn btn-primary">Kirim Pesan</button>
       </form>
     </div>
   </div>

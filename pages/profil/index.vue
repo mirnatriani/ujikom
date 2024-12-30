@@ -1,9 +1,10 @@
 <template>
-  <div class="container pt-3">
+  <div class="container pt-3 pb-5">
     <div class="row">
       <div class="card text-center">
         <h2 class="card-header fw-bold">PROFIL SMKN 4 TASIKMALAYA</h2>
         <div class="card-body">
+          <!--Sejarah-->
           <h2 class="card-title">Sejarah</h2>
           <p class="card-text">
             Sejalan dengan Program Pemerintah dibidang pendidikan Menengah
@@ -29,6 +30,7 @@
             keputusan kepala Badan Pelayanan Perizinan Terpadu Kota Tasikmalaya
             No. 420/9/SK-BPPT/2012 Tanggal 06 Februari 2012.
           </p>
+          <!--VisiMisi-->
           <h2 class="card-title">Visi Misi SMKN 4 TASIKMALAYA</h2>
           <div class="visi">
             <h4 class="text-center">VISI</h4>
@@ -83,57 +85,4 @@
       </div>
     </div>
   </div>
-  <!-- <div class="container">
-    <h2 class="text-center pt-3">VISI MISI SMKN 4 TASIKMALAYA</h2>
-    <div class="row">
-      <div class="visi">
-        <h4 class="text-center">VISI</h4>
-        <h6 class="text-center">
-          Terwujudnya Lulusan Yang Cerdas, Aktif, Adaktif Dan Produktif
-          Berlandaskan Iman Dan Takwa
-        </h6>
-      </div>
-      <h4 class="text-center">MISI</h4>
-      <ol class="list-group-numbered text-center">
-        <li class="list-group-item">
-          Menyiapkan Sumber Daya Manusia yang cerdas dan kompeten baik hardskill
-          maupun softskill.
-        </li>
-        <li class="list-group-item">
-          Meningkatkan dan mengembangkan aktifitas serta kreatifitas seluruh
-          warga sekolah dalam berbagai kegiatan positif.
-        </li>
-        <li class="list-group-item">
-          Mewujudkan manajemen pengelolaan yang efektif, efesien, transparan,
-          akuntabel dan layanan prima.
-        </li>
-        <li class="list-group-item">
-          Menumbuhkan dan mengembangkan potensi dan kemampuan Sumber Daya
-          Manusia yang berdaya saing tinggi melalui berbagai kegiatan akademik
-          maupun non akademik.
-        </li>
-        <li class="list-group-item">
-          Menyelenggarakan berbagai program kegiatan dalam upaya meningkatkan
-          Sumber Daya Manusia yang mampu menyesuaikan dengan perkembangan.
-        </li>
-        <li class="list-group-item">
-          Mengembangkan sarana prasarana dan lingkungan sekolah yang
-          menyenangkan sebagai wadah menumbuhkembangkan daya kreasi dan inovasi
-          untuk menghasilkan produk teknologi tepat guna.
-        </li>
-        <li class="list-group-item">
-          Membangun jiwa wirausaha yang handal melalui pembelajaran Teaching
-          Factory (TEFA) dan Kelas Industri.
-        </li>
-        <li class="list-group-item">
-          Menjalin dan mengembangkan kemitraan dengan Industri dan Dunia Kerja
-          (IDUKA) serta lembaga lainnya yang relevan.
-        </li>
-        <li class="list-group-item">
-          Menanamkan dan membudayakan sikap dan perilaku yang baik pada
-          aktivitas di sekolah maupun dalam kehidupan sehari-hari.
-        </li>
-      </ol>
-    </div>
-  </div> -->
 </template>

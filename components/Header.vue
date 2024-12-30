@@ -9,7 +9,7 @@
           class="d-inline-block align-text-top"
         />
       </div>
-      <div class="col-lg-2">SMKN 4 TASIKMALAYA</div>
+      <div class="col-lg-2 text-white">SMKN 4 TASIKMALAYA</div>
       <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button> -->
@@ -25,13 +25,13 @@
             <a class="nav-link" href="/profil">Profil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/kontak">Kontak</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="/galeri">Galeri</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/eskul">Ekstrakurikuler</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/kontak">Kontak</a>
           </li>
         </ul>
       </div>

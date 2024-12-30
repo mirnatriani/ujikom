@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container pb-5">
     <h2 class="text-center">Galeri</h2>
     <div class="row">
       <div class="col-lg-3">

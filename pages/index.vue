@@ -4,7 +4,11 @@
     <div class="carousel-inner">
       <div>
         <div class="hero">
-          <h1>Selamat Datang</h1>
+          <div class="bg-primary">
+            <h1>
+              Selamat Datang di Sekolah Pusat Keunggulan SMKN 4 Tasikmalaya
+            </h1>
+          </div>
         </div>
       </div>
     </div>
@@ -20,7 +24,7 @@
             alt="..."
             style="width: 25rem"
           />
-          <div class="fs-1 text-center">Sambutan Kepala Sekolah</div>
+          <h1 class="mt-5 text-center">Sambutan Kepala Sekolah</h1>
 
           <p class="pt-5">
             Assalamualaikum Warahmatullahi Wabarakatuh Selamat datang di SMKN 4
@@ -45,9 +49,8 @@
     </div>
 
     <!--Statistik-->
-
     <div class="container">
-      <div class="fs-1 text-center">Data Statistik</div>
+      <h1 class="fs-1 text-center">Data Statistik</h1>
       <div class="row my-5 ms-5 text-white">
         <div class="col-lg-3">
           <div class="card bg-primary" style="height: 10rem">
@@ -62,7 +65,7 @@
           <div class="card bg-primary" style="height: 10rem">
             <div class="card-body">
               <h4 class="card-title text-md-center mt-5 fw-bold">
-                34 jumlah rombel
+                18 Ekstrakurikuler
               </h4>
             </div>
           </div>
@@ -92,25 +95,19 @@
     <div class="container">
       <h1 class="text-center mb-5">Berita Terkini</h1>
       <div class="row justify-content-center">
-        <div class="col-lg-4 d-flex justify-content-center">
+        <div
+          v-for="(berita, i) in cover"
+          :key="i"
+          class="col-lg-4 d-flex justify-content-center"
+        >
           <div class="card" style="width: 18rem">
-            <img
-              src="/assets/img/berita2.jpg"
-              class="card-img-top"
-              alt="berita"
-            />
+            <img :src="berita.poto" class="card-img-top" alt="berita" />
             <div class="card-body">
               <h5 class="card-title">
-                PT DAM Jalin Kerjasama dengan SMKN 4 Tasikmalaya Terapkan
-                Kurikulum Teknik dan Bisnis Sepeda Motor Honda
+                {{ berita.judul }}
               </h5>
               <p class="card-text">
-                PT Daya Adicipta Motora (DAM) selaku Main Dealer Sepeda Motor
-                dan Suku Cadang Honda di Jawa Barat meresmikan kerjasama dengan
-                SMK Negeri 4 Tasikmalaya yang mengimplementasikan Kurikulum
-                Teknik dan Bisnis Sepeda Motor (KTBSM) Astra Honda sekaligus
-                diangkat sebagai Tempat Uji Kompetensi (TUK) versi Astra Honda
-                Motor.
+                {{ berita.nama }}
               </p>
               <a
                 href="https://radartasik.disway.id/read/643944/pt-dam-jalin-kerjasama-dengan-smkn-4-tasikmalaya-terapkan-kurikulum-teknik-dan-bisnis-sepeda-motor-honda"
@@ -120,113 +117,109 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 d-flex justify-content-center">
-          <div class="card" style="width: 18rem">
-            <img src="/assets/img/berita3.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">
-                DAM Gelar Safety Riding Fomo di SMKN 4 Kota Tasikmalaya
-              </h5>
-              <p class="card-text">
-                Kampanyekan Cari_Aman Bersama Jurnalis, DAM Gelar Safety Riding
-                Fomo di SMKN 4 Kota Tasikmalaya Artikel ini telah tayang di
-                TribunJabar.id dengan judul Kampanyekan Cari_Aman Bersama
-                Jurnalis, DAM Gelar Safety Riding Fomo di SMKN 4 Kota
-                Tasikmalaya,
-              </p>
-              <a
-                href="https://jabar.tribunnews.com/2024/07/24/kampanyekan-cari_aman-bersama-jurnalis-dam-gelar-safety-riding-fomo-di-smkn-4-kota-tasikmalaya"
-                class="btn btn-primary"
-                >Selengkapnya</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 d-flex justify-content-center">
-          <div class="card" style="width: 18rem">
-            <img
-              src="/assets/img/berita1.webp"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">
-                SMKN 4 Tasikmalaya Raih Beasiswa dari Yayasan Astra Honda Motor
-              </h5>
-              <p class="card-text">
-                Tujuh Siswa SMKN 4 Tasikmalaya Raih Beasiswa dari Yayasan Astra
-                Honda Motor
-              </p>
-              <a
-                href="https://radartasik.id/2024/10/07/tujuh-siswa-smkn-4-tasikmalaya-raih-beasiswa-dari-yayasan-astra-honda-motor/"
-                class="btn btn-primary"
-                >Selengkapnya</a
-              >
-            </div>
-          </div>
-        </div>
       </div>
     </div>
 
+    <!--Jurusan-->
     <div class="container">
       <h1 class="text-center mb-5">Kompetensi Keahlian</h1>
       <div class="row">
         <div class="d-flex justify-content-center">
           <div class="col-lg-4">
-            <img
-              src="/assets/img/pplg.jpeg"
-              alt=" "
-              style="width: 20rem; height: 20rem"
-            />
-            <h5 class="card-title text-center text-md-start">
-              Pengembangan Perangkat Lunak Dan Gim(PPLG)
-            </h5>
-          </div>
-
-          <div class="col-lg-4">
-            <img
-              src="/assets/img/toi.jpeg"
-              alt=" "
-              style="width: 20rem; height: 20rem"
-            />
-            <h5 class="card-title text-center text-md-start">
-              Teknik Otomasi Industri(TOI)
-            </h5>
-          </div>
-        </div>
-        <div class="d-flex justify-content-center">
-          <div class="col-lg-4">
-            <img
-              src="/assets/img/tjkt.jpeg"
-              alt=" "
-              style="width: 20rem; height: 20rem"
-            />
-            <h5 class="card-title text-center text-md-start">
-              Teknik Jaringan komputer Dan Telekomunikasi(TJKT)
-            </h5>
-          </div>
-
-          <div class="col-lg-4">
-            <img
-              src="/assets/img/dkv.jpeg"
-              alt=" "
-              style="width: 20rem; height: 20rem"
-            />
-            <h5 class="card-title text-center text-md-start">
-              Desain Komunikasi Visual(DKV)
-            </h5>
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="/assets/img/pplg.jpeg"
+                    class="img-fluid rounded-start"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Pengembangan Perangkat Lunak & Gim(PPLG)
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="d-flex justify-content-center">
           <div class="col-lg-4">
-            <img
-              src="/assets/img/tbsm.jpg"
-              alt=" "
-              style="width: 20rem; height: 20rem"
-            />
-            <h5 class="card-title text-center text-md-start">
-              Teknik Dan Bisnis Sepeda Motor(TBSM)
-            </h5>
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="/assets/img/tjkt.jpeg"
+                    class="img-fluid rounded-start"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Teknik Jaringan Komputer & Telekomunikasi(TJKT)
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="/assets/img/tbsm.jpg"
+                    class="img-fluid rounded-start"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Teknik & Bisnis Sepeda Motor(TBSM)
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="/assets/img/dkv.jpeg"
+                    class="img-fluid rounded-start"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Desain Komunikasi Visual</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <div class="col-lg-4">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="/assets/img/toi.jpeg"
+                    class="img-fluid rounded-start"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Teknik Otomasi Industri(TOI)</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -246,3 +239,18 @@
   color: white;
 }
 </style>
+
+<script setup>
+const supabase = useSupabaseClient();
+
+const cover = ref([]);
+
+const getData = async () => {
+  const { data, error } = await supabase.from("berita").select(`*`);
+  if (data) cover.value = data;
+};
+
+onMounted(() => {
+  getData();
+});
+</script>

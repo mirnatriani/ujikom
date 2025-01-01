@@ -38,3 +38,15 @@
     </div>
   </nav>
 </template>
+
+<script setup>
+useHead({
+  title: "Beranda Page",
+  meta: [
+    {
+      name: "description",
+      content: "Beranda Page",
+    },
+  ],
+});
+</script>

@@ -15,6 +15,15 @@
 </template>
 
 <script setup>
+useHead({
+  title: "Ekstrakurikuler Page",
+  meta: [
+    {
+      name: "description",
+      content: "Ekstrakurikuler Page",
+    },
+  ],
+});
 const supabase = useSupabaseClient();
 
 const cover = ref([]);

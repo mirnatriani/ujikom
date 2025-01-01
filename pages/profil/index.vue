@@ -86,3 +86,15 @@
     </div>
   </div>
 </template>
+
+<script setup>
+useHead({
+  title: "Profil Page",
+  meta: [
+    {
+      name: "description",
+      content: "Profil Page",
+    },
+  ],
+});
+</script>

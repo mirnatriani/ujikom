@@ -36,4 +36,4 @@ const getCover = async () => {
 onMounted(() => {
   getCover();
 });
-</script>
+</script> 

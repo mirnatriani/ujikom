@@ -46,13 +46,17 @@ useHead({
 });
 </script>
 
+
 <!-- <template>
   <div class="container pb-5">
-    <h2 class="text-center">Galeri</h2>
-    <div class="row">
-      <div v-for="(data, i) in galeri" :key="i" class="col-lg-3 pt-3">
-        <div class="card" style="width: 18rem">
-          <img :src="data.poto" class="card-img-top" alt="..." />
+    <h2 class="text-center pt-3">Ekstrakurikuler</h2>
+    <div class="row flex justify-content-center">
+      <div v-for="(eskul, i) in cover" :key="i" class="col-lg-3">
+        <div class="card mb-5" style="width: 18rem">
+          <img :src="eskul.poto" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">{{ eskul.nama }}</h5>
+          </div>
         </div>
       </div>
     </div>
@@ -61,24 +65,24 @@ useHead({
 
 <script setup>
 useHead({
-  title: "Galeri Page",
+  title: "Ekstrakurikuler Page",
   meta: [
     {
       name: "description",
-      content: "Galeri Page",
+      content: "Ekstrakurikuler Page",
     },
   ],
 });
 const supabase = useSupabaseClient();
 
-const galeri = ref([]);
+const cover = ref([]);
 
-const getData = async () => {
-  const { data, error } = await supabase.from("galeri").select(`*`);
-  if (data) galeri.value = data;
+const getCover = async () => {
+  const { data } = await supabase.from("eskul").select("*");
+  if (data) cover.value = data;
 };
 
 onMounted(() => {
-  getData();
+  getCover();
 });
 </script> -->
